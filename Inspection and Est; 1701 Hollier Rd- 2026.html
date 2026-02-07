@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection Report - 1701 Hollier Road</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .report-container {
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 28px;
+        }
+        .header p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+        h2 {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 40px;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+        h3 {
+            color: #c0392b;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .summary-table th {
+            background-color: #ecf0f1;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #bdc3c7;
+        }
+        .summary-table td {
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            vertical-align: top;
+        }
+        .estimate-col {
+            width: 150px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .observation {
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        ul {
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* PHOTO LINK AND HOVER STYLES */
+        .photo-link {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            position: relative;
+            cursor: pointer;
+            margin-left: 5px;
+            white-space: nowrap;
+        }
+        .photo-link:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+        
+        /* The Popup Container */
+        .photo-link .popup {
+            display: none;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .photo-link .popup img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Show the popup on hover */
+        .photo-link:hover .popup {
+            display: block;
+        }
+
+        /* ATTACHMENT SECTION STYLES */
+        .attachment-page {
+            page-break-after: always;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 40px;
+            background: #fff;
+            text-align: center;
+        }
+        .attachment-header {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #555;
+            font-family: monospace;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .attachment-img {
+            max-width: 100%;
+            max-height: 800px;
+            height: auto;
+            display: inline-block;
+        }
+
+        @media print {
+            body { background-color: white; max-width: 100%; padding: 0; }
+            .report-container { box-shadow: none; padding: 0; margin-bottom: 0; }
+            h2 { background-color: #eee; color: black; border: 1px solid #ccc; -webkit-print-color-adjust: exact; }
+            .photo-link { text-decoration: none; color: black; }
+            .photo-link .popup { display: none !important; } /* Hide popups when printing */
+            .attachment-page { break-after: page; page-break-after: always; border: none; margin-bottom: 0; padding: 0; height: 100vh; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-container">
+
+    <div class="header">
+        <h1>PROPERTY INSPECTION REPORT</h1>
+        <p><strong>Property Address:</strong> 1701 Hollier Road, Breaux Bridge, LA 70517</p>
+        <p><strong>Date:</strong> October 26, 2023 &nbsp;|&nbsp; <strong>Status:</strong> Requiring Repair & Maintenance</p>
+    </div>
+
+    <h2>SUMMARY OF FINDINGS & COST ESTIMATES</h2>
+    <p>The following is a summary of the inspection findings, categorized by priority. The "Urgent" category has been reserved for immediate life safety and active structural threats, while "Essential Repairs" covers critical systems and weather-proofing that require near-term attention to prevent further deterioration.</p>
+
+    <h3>I. URGENT / SAFETY HAZARDS (Action Required Immediately)</h3>
+    <table class="summary-table">
+        <tr>
+            <th>Item / Defect</th>
+            <th>Contractor Estimate</th>
+        </tr>
+        <tr>
+            <td><strong>1. Electrical System Hazards (Fire Risk):</strong> Evidence of arcing/burning at multiple receptacles; damaged toggle switches; exposed energized wiring (open splices) in attic; service entrance concerns.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+        <tr>
+            <td><strong>2. Active Structural Damage / Wood Destroying Organisms:</strong> Sub-floor framing members (sills/joists) show evidence of advanced rot and potential termite activity.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+    </table>
+
+    <h3>II. ESSENTIAL REPAIRS (Action Required Near Term)</h3>
+    <table class="summary-table">
+        <tr>
+            <th>Item / Defect</th>
+            <th>Contractor Estimate</th>
+        </tr>
+        <tr>
+            <td><strong>3. Foundation Pier Stability:</strong> Concrete piers in the crawlspace show signs of leaning or settling; improper shimming observed.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+        <tr>
+            <td><strong>4. Exterior Envelope (Siding & Trim):</strong> Moderate to severe rot on fascia boards, soffits, and window sills; loose and missing siding planks allowing water behind the weather barrier.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+        <tr>
+            <td><strong>5. Plumbing System Corrosion:</strong> Cast iron waste lines in the crawlspace exhibit heavy corrosion and scaling; potential for imminent failure/leaks.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+        <tr>
+            <td><strong>6. Crawlspace Drainage & Standing Water:</strong> Significant standing water observed throughout the crawlspace foundation area. This compromises soil bearing capacity and promotes wood rot/mold.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+        <tr>
+            <td><strong>7. Roof System & Attic Penetrations:</strong> Visible daylight through roof eaves; while the building needs to breath, at some parts it appeared excessive and needs to be inspected more closely to ensure there are no active leaks that can lead to ceiling collapse and further staining in living areas.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+    </table>
+
+    <h3>III. DEFERRED MAINTENANCE (Monitor & Repair)</h3>
+    <table class="summary-table">
+        <tr>
+            <th>Item / Defect</th>
+            <th>Contractor Estimate</th>
+        </tr>
+        <tr>
+            <td><strong>8. Interior Cosmetic Finishes:</strong> Damaged wall paneling, missing trim, and cosmetic ceiling damage (post-leak repair).</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+        <tr>
+            <td><strong>9. Exterior Vegetation & Grading:</strong> Dense vegetation is encroaching upon and directly contacting the exterior siding, restricting airflow and trapping moisture against the structure.</td>
+            <td class="estimate-col">$__________</td>
+        </tr>
+    </table>
+
+    <hr style="border: 0; border-top: 1px solid #ccc; margin: 40px 0;">
+
+    <h2>DETAILED OBSERVATIONS</h2>
+
+    <div class="observation">
+        <h3>1. Electrical System Hazards (Fire Risk)</h3>
+        <p><strong>Observation:</strong> The electrical system exhibits signs of thermal damage and unworkmanlike installation.</p>
+        <ul>
+            <li>Interior receptacles show clear evidence of arcing, melting, and scorching on the faceplates. 
+                <a class="photo-link" href="images/054 - 2026-02-04, 1738.jpeg" target="_blank">[Photo 054]<span class="popup"><img src="images/054 - 2026-02-04, 1738.jpeg" alt="Burnt Outlet"></span></a> 
+                <a class="photo-link" href="images/055 - 2026-02-04, 1738.jpeg" target="_blank">[Photo 055]<span class="popup"><img src="images/055 - 2026-02-04, 1738.jpeg" alt="Burnt Outlet"></span></a>
+            </li>
+            <li>Light switches are physically broken or missing covers, exposing internal mechanisms. 
+                <a class="photo-link" href="images/014 - 2026-02-04, 1547 est.jpeg" target="_blank">[Photo 014]<span class="popup"><img src="images/014 - 2026-02-04, 1547 est.jpeg" alt="Broken Switch"></span></a> 
+                <a class="photo-link" href="images/056 - 2026-02-04, 1740.jpeg" target="_blank">[Photo 056]<span class="popup"><img src="images/056 - 2026-02-04, 1740.jpeg" alt="Broken Switch"></span></a>
+            </li>
+            <li>The attic contains "flying splices" (wire connections made outside of a junction box) and open cabling. 
+                <a class="photo-link" href="images/029 - 2026-02-04, 1730.jpeg" target="_blank">[Photo 029]<span class="popup"><img src="images/029 - 2026-02-04, 1730.jpeg" alt="Attic Splice"></span></a> 
+                <a class="photo-link" href="images/033 - 2026-02-04, 1730.jpeg" target="_blank">[Photo 033]<span class="popup"><img src="images/033 - 2026-02-04, 1730.jpeg" alt="Attic Wiring"></span></a>
+            </li>
+            <li>Main electrical panel shows age and lack of proper cover/labeling. 
+                <a class="photo-link" href="images/026 - 2026-02-04, 1713.jpg" target="_blank">[Photo 026]<span class="popup"><img src="images/026 - 2026-02-04, 1713.jpg" alt="Panel"></span></a>
+            </li>
+            <li>Service entrance exterior wiring is weathered; loose cabling observed under structure. 
+                <a class="photo-link" href="images/058 - 2026-02-04, 1746.jpg" target="_blank">[Photo 058]<span class="popup"><img src="images/058 - 2026-02-04, 1746.jpg" alt="Service Entrance"></span></a> 
+                <a class="photo-link" href="images/060 - 2026-02-04, 1747.jpg" target="_blank">[Photo 060]<span class="popup"><img src="images/060 - 2026-02-04, 1747.jpg" alt="Loose Wire"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>2. Active Structural Damage / Wood Destroying Organisms</h3>
+        <p><strong>Observation:</strong> The wood framing members supporting the floor system show signs of biological deterioration.</p>
+        <ul>
+            <li>Sub-floor framing members (sills/joists) show evidence of advanced rot and potential termite activity. 
+                <a class="photo-link" href="images/059 - 2026-02-04, 1747.jpg" target="_blank">[Photo 059]<span class="popup"><img src="images/059 - 2026-02-04, 1747.jpg" alt="Rot/Termites"></span></a> 
+                <a class="photo-link" href="images/061 - 2026-02-04, 1747.jpg" target="_blank">[Photo 061]<span class="popup"><img src="images/061 - 2026-02-04, 1747.jpg" alt="Structural Rot"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>3. Foundation Pier Stability</h3>
+        <p><strong>Observation:</strong> The pier-and-beam foundation shows signs of movement.</p>
+        <ul>
+            <li>Concrete piers in the crawlspace show signs of leaning or settling. 
+                <a class="photo-link" href="images/066 - 2026-02-04, 1749.jpg" target="_blank">[Photo 066]<span class="popup"><img src="images/066 - 2026-02-04, 1749.jpg" alt="Leaning Pier"></span></a>
+            </li>
+            <li>Improper shimming observed (wood blocks). 
+                <a class="photo-link" href="images/064 - 2026-02-04, 1748.jpg" target="_blank">[Photo 064]<span class="popup"><img src="images/064 - 2026-02-04, 1748.jpg" alt="Shimming"></span></a>
+            </li>
+            <li>Piers sitting in water.
+                 <a class="photo-link" href="images/062 - 2026-02-04, 1748.jpg" target="_blank">[Photo 062]<span class="popup"><img src="images/062 - 2026-02-04, 1748.jpg" alt="Pier in Water"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>4. Exterior Envelope (Siding & Trim)</h3>
+        <p><strong>Observation:</strong> The exterior weather barrier is compromised.</p>
+        <ul>
+            <li>Moderate to severe rot on fascia boards and soffits. 
+                <a class="photo-link" href="images/000 - 2026-01-28, 1558.jpeg" target="_blank">[Photo 000]<span class="popup"><img src="images/000 - 2026-01-28, 1558.jpeg" alt="Rotted Fascia"></span></a> 
+                <a class="photo-link" href="images/001 - 2026-01-28, 1559.jpeg" target="_blank">[Photo 001]<span class="popup"><img src="images/001 - 2026-01-28, 1559.jpeg" alt="Eave Rot"></span></a>
+            </li>
+            <li>Loose and missing siding planks allowing water behind the weather barrier. 
+                <a class="photo-link" href="images/002 - 2026-01-28, 1601.jpeg" target="_blank">[Photo 002]<span class="popup"><img src="images/002 - 2026-01-28, 1601.jpeg" alt="Loose Siding"></span></a>
+            </li>
+            <li>Window sills show deep rot and deterioration. 
+                <a class="photo-link" href="images/019 - 2026-02-04, 1707.jpg" target="_blank">[Photo 019]<span class="popup"><img src="images/019 - 2026-02-04, 1707.jpg" alt="Rotted Sill"></span></a>
+            </li>
+            <li>Porch post deterioration.
+                <a class="photo-link" href="images/018 - 2026-02-04, 1707.jpg" target="_blank">[Photo 018]<span class="popup"><img src="images/018 - 2026-02-04, 1707.jpg" alt="Porch Post"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>5. Plumbing System Corrosion</h3>
+        <p><strong>Observation:</strong> Supply and waste piping in the crawlspace is in poor condition.</p>
+        <ul>
+            <li>Cast iron waste lines in the crawlspace exhibit heavy corrosion and scaling. 
+                <a class="photo-link" href="images/068 - 2026-02-04, 1751.jpg" target="_blank">[Photo 068]<span class="popup"><img src="images/068 - 2026-02-04, 1751.jpg" alt="Corroded Pipe"></span></a> 
+                <a class="photo-link" href="images/072 - 2026-02-04, 1753.jpg" target="_blank">[Photo 072]<span class="popup"><img src="images/072 - 2026-02-04, 1753.jpg" alt="Rusted Stack"></span></a>
+            </li>
+            <li>Potential for imminent failure/leaks in waste lines.</li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>6. Crawlspace Drainage & Standing Water</h3>
+        <p><strong>Observation:</strong> The crawlspace is not properly drained, resulting in "lake-effect" conditions under the home.</p>
+        <ul>
+            <li>Significant standing water observed throughout the crawlspace foundation area. 
+                <a class="photo-link" href="images/075 - 2026-02-04, 1753.jpg" target="_blank">[Photo 075]<span class="popup"><img src="images/075 - 2026-02-04, 1753.jpg" alt="Standing Water"></span></a> 
+                <a class="photo-link" href="images/077 - 2026-02-04, 1754.jpg" target="_blank">[Photo 077]<span class="popup"><img src="images/077 - 2026-02-04, 1754.jpg" alt="Water under house"></span></a>
+            </li>
+            <li>This compromises soil bearing capacity and promotes wood rot/mold.</li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>7. Roof System & Attic Penetrations</h3>
+        <p><strong>Observation:</strong> The roof covering and attic ventilation require attention.</p>
+        <ul>
+            <li>Visible daylight through roof eaves; excessive gaps observed. 
+                <a class="photo-link" href="images/042 - 2026-02-04, 1732.jpeg" target="_blank">[Photo 042]<span class="popup"><img src="images/042 - 2026-02-04, 1732.jpeg" alt="Daylight in Attic"></span></a> 
+                <a class="photo-link" href="images/046 - 2026-02-04, 1733.jpeg" target="_blank">[Photo 046]<span class="popup"><img src="images/046 - 2026-02-04, 1733.jpeg" alt="Attic Gaps"></span></a>
+            </li>
+            <li>Evidence of water intrusion staining on roof decking. 
+                <a class="photo-link" href="images/039 - 2026-02-04, 1732.jpeg" target="_blank">[Photo 039]<span class="popup"><img src="images/039 - 2026-02-04, 1732.jpeg" alt="Roof Stain"></span></a>
+            </li>
+            <li>Interior ceiling damage/stains. 
+                <a class="photo-link" href="images/004 - 2026-01-28, 1611.jpeg" target="_blank">[Photo 004]<span class="popup"><img src="images/004 - 2026-01-28, 1611.jpeg" alt="Ceiling Stain"></span></a> 
+                <a class="photo-link" href="images/005 - 2026-01-28, 1612.jpeg" target="_blank">[Photo 005]<span class="popup"><img src="images/005 - 2026-01-28, 1612.jpeg" alt="Ceiling Gap"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>8. Interior Cosmetic Finishes</h3>
+        <p><strong>Observation:</strong> General wear and tear and damage from settlement/leaks.</p>
+        <ul>
+            <li>Damaged/bowing wall paneling. 
+                <a class="photo-link" href="images/006 - 2026-01-28, 1613.jpeg" target="_blank">[Photo 006]<span class="popup"><img src="images/006 - 2026-01-28, 1613.jpeg" alt="Bowing Panel"></span></a> 
+                <a class="photo-link" href="images/011 - 2026-01-28, 1617.jpg" target="_blank">[Photo 011]<span class="popup"><img src="images/011 - 2026-01-28, 1617.jpg" alt="Panel Damage"></span></a>
+            </li>
+            <li>Missing or detached door trim. 
+                <a class="photo-link" href="images/028 - 2026-02-04, 1724.jpg" target="_blank">[Photo 028]<span class="popup"><img src="images/028 - 2026-02-04, 1724.jpg" alt="Door Trim"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="observation">
+        <h3>9. Exterior Vegetation & Grading</h3>
+        <p><strong>Observation:</strong> Site conditions promote moisture retention near the home.</p>
+        <ul>
+            <li>Dense vegetation is encroaching upon and directly contacting the exterior siding. 
+                <a class="photo-link" href="images/003 - 2026-01-28, 1603.jpeg" target="_blank">[Photo 003]<span class="popup"><img src="images/003 - 2026-01-28, 1603.jpeg" alt="Vegetation"></span></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- ATTACHMENTS SECTION -->
+<div class="report-container">
+    <div class="header">
+        <h1>ATTACHMENTS</h1>
+        <p>Full Photo Log</p>
+    </div>
+
+    <!-- Generated List of All Photos -->
+    <div class="attachment-page"><div class="attachment-header">000 - 2026-01-28, 1558.jpeg</div><img class="attachment-img" src="images/000 - 2026-01-28, 1558.jpeg" alt="Attachment 000"></div>
+    <div class="attachment-page"><div class="attachment-header">001 - 2026-01-28, 1559.jpeg</div><img class="attachment-img" src="images/001 - 2026-01-28, 1559.jpeg" alt="Attachment 001"></div>
+    <div class="attachment-page"><div class="attachment-header">002 - 2026-01-28, 1601.jpeg</div><img class="attachment-img" src="images/002 - 2026-01-28, 1601.jpeg" alt="Attachment 002"></div>
+    <div class="attachment-page"><div class="attachment-header">003 - 2026-01-28, 1603.jpeg</div><img class="attachment-img" src="images/003 - 2026-01-28, 1603.jpeg" alt="Attachment 003"></div>
+    <div class="attachment-page"><div class="attachment-header">004 - 2026-01-28, 1611.jpeg</div><img class="attachment-img" src="images/004 - 2026-01-28, 1611.jpeg" alt="Attachment 004"></div>
+    <div class="attachment-page"><div class="attachment-header">005 - 2026-01-28, 1612.jpeg</div><img class="attachment-img" src="images/005 - 2026-01-28, 1612.jpeg" alt="Attachment 005"></div>
+    <div class="attachment-page"><div class="attachment-header">006 - 2026-01-28, 1613.jpeg</div><img class="attachment-img" src="images/006 - 2026-01-28, 1613.jpeg" alt="Attachment 006"></div>
+    <div class="attachment-page"><div class="attachment-header">007 - 2026-01-28, 1613.jpeg</div><img class="attachment-img" src="images/007 - 2026-01-28, 1613.jpeg" alt="Attachment 007"></div>
+    <div class="attachment-page"><div class="attachment-header">008 - 2026-01-28, 1613.jpeg</div><img class="attachment-img" src="images/008 - 2026-01-28, 1613.jpeg" alt="Attachment 008"></div>
+    <div class="attachment-page"><div class="attachment-header">009 - 2026-01-28, 1613.jpeg</div><img class="attachment-img" src="images/009 - 2026-01-28, 1613.jpeg" alt="Attachment 009"></div>
+    <div class="attachment-page"><div class="attachment-header">010 - 2026-01-28, 1614.jpeg</div><img class="attachment-img" src="images/010 - 2026-01-28, 1614.jpeg" alt="Attachment 010"></div>
+    <div class="attachment-page"><div class="attachment-header">011 - 2026-01-28, 1617.jpg</div><img class="attachment-img" src="images/011 - 2026-01-28, 1617.jpg" alt="Attachment 011"></div>
+    <div class="attachment-page"><div class="attachment-header">012 - 2026-01-28, 1618.jpg</div><img class="attachment-img" src="images/012 - 2026-01-28, 1618.jpg" alt="Attachment 012"></div>
+    <div class="attachment-page"><div class="attachment-header">013 - 2026-01-28, 1618.jpg</div><img class="attachment-img" src="images/013 - 2026-01-28, 1618.jpg" alt="Attachment 013"></div>
+    <div class="attachment-page"><div class="attachment-header">014 - 2026-02-04, 1547 est.jpeg</div><img class="attachment-img" src="images/014 - 2026-02-04, 1547 est.jpeg" alt="Attachment 014"></div>
+    <div class="attachment-page"><div class="attachment-header">015 - 2026-02-04, 1706.jpeg</div><img class="attachment-img" src="images/015 - 2026-02-04, 1706.jpeg" alt="Attachment 015"></div>
+    <div class="attachment-page"><div class="attachment-header">016 - 2026-02-04, 1706.jpeg</div><img class="attachment-img" src="images/016 - 2026-02-04, 1706.jpeg" alt="Attachment 016"></div>
+    <div class="attachment-page"><div class="attachment-header">017 - 2026-02-04, 1706.jpeg</div><img class="attachment-img" src="images/017 - 2026-02-04, 1706.jpeg" alt="Attachment 017"></div>
+    <div class="attachment-page"><div class="attachment-header">018 - 2026-02-04, 1707.jpg</div><img class="attachment-img" src="images/018 - 2026-02-04, 1707.jpg" alt="Attachment 018"></div>
+    <div class="attachment-page"><div class="attachment-header">019 - 2026-02-04, 1707.jpg</div><img class="attachment-img" src="images/019 - 2026-02-04, 1707.jpg" alt="Attachment 019"></div>
+    <div class="attachment-page"><div class="attachment-header">020 - 2026-02-04, 1709.jpg</div><img class="attachment-img" src="images/020 - 2026-02-04, 1709.jpg" alt="Attachment 020"></div>
+    <div class="attachment-page"><div class="attachment-header">021 - 2026-02-04, 1709.jpg</div><img class="attachment-img" src="images/021 - 2026-02-04, 1709.jpg" alt="Attachment 021"></div>
+    <div class="attachment-page"><div class="attachment-header">022 - 2026-02-04, 1709.jpg</div><img class="attachment-img" src="images/022 - 2026-02-04, 1709.jpg" alt="Attachment 022"></div>
+    <div class="attachment-page"><div class="attachment-header">023 - 2026-02-04, 1709.jpg</div><img class="attachment-img" src="images/023 - 2026-02-04, 1709.jpg" alt="Attachment 023"></div>
+    <div class="attachment-page"><div class="attachment-header">024 - 2026-02-04, 1711.jpg</div><img class="attachment-img" src="images/024 - 2026-02-04, 1711.jpg" alt="Attachment 024"></div>
+    <div class="attachment-page"><div class="attachment-header">025 - 2026-02-04, 1711.jpg</div><img class="attachment-img" src="images/025 - 2026-02-04, 1711.jpg" alt="Attachment 025"></div>
+    <div class="attachment-page"><div class="attachment-header">026 - 2026-02-04, 1713.jpg</div><img class="attachment-img" src="images/026 - 2026-02-04, 1713.jpg" alt="Attachment 026"></div>
+    <div class="attachment-page"><div class="attachment-header">027 - 2026-02-04, 1724.jpg</div><img class="attachment-img" src="images/027 - 2026-02-04, 1724.jpg" alt="Attachment 027"></div>
+    <div class="attachment-page"><div class="attachment-header">028 - 2026-02-04, 1724.jpg</div><img class="attachment-img" src="images/028 - 2026-02-04, 1724.jpg" alt="Attachment 028"></div>
+    <div class="attachment-page"><div class="attachment-header">029 - 2026-02-04, 1730.jpeg</div><img class="attachment-img" src="images/029 - 2026-02-04, 1730.jpeg" alt="Attachment 029"></div>
+    <div class="attachment-page"><div class="attachment-header">030 - 2026-02-04, 1730.jpeg</div><img class="attachment-img" src="images/030 - 2026-02-04, 1730.jpeg" alt="Attachment 030"></div>
+    <div class="attachment-page"><div class="attachment-header">031 - 2026-02-04, 1730.jpeg</div><img class="attachment-img" src="images/031 - 2026-02-04, 1730.jpeg" alt="Attachment 031"></div>
+    <div class="attachment-page"><div class="attachment-header">032 - 2026-02-04, 1730.jpeg</div><img class="attachment-img" src="images/032 - 2026-02-04, 1730.jpeg" alt="Attachment 032"></div>
+    <div class="attachment-page"><div class="attachment-header">033 - 2026-02-04, 1730.jpeg</div><img class="attachment-img" src="images/033 - 2026-02-04, 1730.jpeg" alt="Attachment 033"></div>
+    <div class="attachment-page"><div class="attachment-header">034 - 2026-02-04, 1731.jpeg</div><img class="attachment-img" src="images/034 - 2026-02-04, 1731.jpeg" alt="Attachment 034"></div>
+    <div class="attachment-page"><div class="attachment-header">035 - 2026-02-04, 1731.jpeg</div><img class="attachment-img" src="images/035 - 2026-02-04, 1731.jpeg" alt="Attachment 035"></div>
+    <div class="attachment-page"><div class="attachment-header">036 - 2026-02-04, 1731.jpeg</div><img class="attachment-img" src="images/036 - 2026-02-04, 1731.jpeg" alt="Attachment 036"></div>
+    <div class="attachment-page"><div class="attachment-header">037 - 2026-02-04, 1731.jpeg</div><img class="attachment-img" src="images/037 - 2026-02-04, 1731.jpeg" alt="Attachment 037"></div>
+    <div class="attachment-page"><div class="attachment-header">038 - 2026-02-04, 1731.jpeg</div><img class="attachment-img" src="images/038 - 2026-02-04, 1731.jpeg" alt="Attachment 038"></div>
+    <div class="attachment-page"><div class="attachment-header">039 - 2026-02-04, 1732.jpeg</div><img class="attachment-img" src="images/039 - 2026-02-04, 1732.jpeg" alt="Attachment 039"></div>
+    <div class="attachment-page"><div class="attachment-header">040 - 2026-02-04, 1732.jpeg</div><img class="attachment-img" src="images/040 - 2026-02-04, 1732.jpeg" alt="Attachment 040"></div>
+    <div class="attachment-page"><div class="attachment-header">041 - 2026-02-04, 1732.jpeg</div><img class="attachment-img" src="images/041 - 2026-02-04, 1732.jpeg" alt="Attachment 041"></div>
+    <div class="attachment-page"><div class="attachment-header">042 - 2026-02-04, 1732.jpeg</div><img class="attachment-img" src="images/042 - 2026-02-04, 1732.jpeg" alt="Attachment 042"></div>
+    <div class="attachment-page"><div class="attachment-header">043 - 2026-02-04, 1733.jpeg</div><img class="attachment-img" src="images/043 - 2026-02-04, 1733.jpeg" alt="Attachment 043"></div>
+    <div class="attachment-page"><div class="attachment-header">044 - 2026-02-04, 1733.jpeg</div><img class="attachment-img" src="images/044 - 2026-02-04, 1733.jpeg" alt="Attachment 044"></div>
+    <div class="attachment-page"><div class="attachment-header">045 - 2026-02-04, 1733.jpeg</div><img class="attachment-img" src="images/045 - 2026-02-04, 1733.jpeg" alt="Attachment 045"></div>
+    <div class="attachment-page"><div class="attachment-header">046 - 2026-02-04, 1733.jpeg</div><img class="attachment-img" src="images/046 - 2026-02-04, 1733.jpeg" alt="Attachment 046"></div>
+    <div class="attachment-page"><div class="attachment-header">047 - 2026-02-04, 1733.jpeg</div><img class="attachment-img" src="images/047 - 2026-02-04, 1733.jpeg" alt="Attachment 047"></div>
+    <div class="attachment-page"><div class="attachment-header">048 - 2026-02-04, 1734.jpeg</div><img class="attachment-img" src="images/048 - 2026-02-04, 1734.jpeg" alt="Attachment 048"></div>
+    <div class="attachment-page"><div class="attachment-header">049 - 2026-02-04, 1734.jpeg</div><img class="attachment-img" src="images/049 - 2026-02-04, 1734.jpeg" alt="Attachment 049"></div>
+    <div class="attachment-page"><div class="attachment-header">050 - 2026-02-04, 1734.jpeg</div><img class="attachment-img" src="images/050 - 2026-02-04, 1734.jpeg" alt="Attachment 050"></div>
+    <div class="attachment-page"><div class="attachment-header">051 - 2026-02-04, 1735.jpeg</div><img class="attachment-img" src="images/051 - 2026-02-04, 1735.jpeg" alt="Attachment 051"></div>
+    <div class="attachment-page"><div class="attachment-header">052 - 2026-02-04, 1735.jpeg</div><img class="attachment-img" src="images/052 - 2026-02-04, 1735.jpeg" alt="Attachment 052"></div>
+    <div class="attachment-page"><div class="attachment-header">053 - 2026-02-04, 1735.jpeg</div><img class="attachment-img" src="images/053 - 2026-02-04, 1735.jpeg" alt="Attachment 053"></div>
+    <div class="attachment-page"><div class="attachment-header">054 - 2026-02-04, 1738.jpeg</div><img class="attachment-img" src="images/054 - 2026-02-04, 1738.jpeg" alt="Attachment 054"></div>
+    <div class="attachment-page"><div class="attachment-header">055 - 2026-02-04, 1738.jpeg</div><img class="attachment-img" src="images/055 - 2026-02-04, 1738.jpeg" alt="Attachment 055"></div>
+    <div class="attachment-page"><div class="attachment-header">056 - 2026-02-04, 1740.jpeg</div><img class="attachment-img" src="images/056 - 2026-02-04, 1740.jpeg" alt="Attachment 056"></div>
+    <div class="attachment-page"><div class="attachment-header">057 - 2026-02-04, 1745.jpeg</div><img class="attachment-img" src="images/057 - 2026-02-04, 1745.jpeg" alt="Attachment 057"></div>
+    <div class="attachment-page"><div class="attachment-header">058 - 2026-02-04, 1746.jpg</div><img class="attachment-img" src="images/058 - 2026-02-04, 1746.jpg" alt="Attachment 058"></div>
+    <div class="attachment-page"><div class="attachment-header">059 - 2026-02-04, 1747.jpg</div><img class="attachment-img" src="images/059 - 2026-02-04, 1747.jpg" alt="Attachment 059"></div>
+    <div class="attachment-page"><div class="attachment-header">060 - 2026-02-04, 1747.jpg</div><img class="attachment-img" src="images/060 - 2026-02-04, 1747.jpg" alt="Attachment 060"></div>
+    <div class="attachment-page"><div class="attachment-header">061 - 2026-02-04, 1747.jpg</div><img class="attachment-img" src="images/061 - 2026-02-04, 1747.jpg" alt="Attachment 061"></div>
+    <div class="attachment-page"><div class="attachment-header">062 - 2026-02-04, 1748.jpg</div><img class="attachment-img" src="images/062 - 2026-02-04, 1748.jpg" alt="Attachment 062"></div>
+    <div class="attachment-page"><div class="attachment-header">063 - 2026-02-04, 1748.jpg</div><img class="attachment-img" src="images/063 - 2026-02-04, 1748.jpg" alt="Attachment 063"></div>
+    <div class="attachment-page"><div class="attachment-header">064 - 2026-02-04, 1748.jpg</div><img class="attachment-img" src="images/064 - 2026-02-04, 1748.jpg" alt="Attachment 064"></div>
+    <div class="attachment-page"><div class="attachment-header">065 - 2026-02-04, 1748.jpg</div><img class="attachment-img" src="images/065 - 2026-02-04, 1748.jpg" alt="Attachment 065"></div>
+    <div class="attachment-page"><div class="attachment-header">066 - 2026-02-04, 1749.jpg</div><img class="attachment-img" src="images/066 - 2026-02-04, 1749.jpg" alt="Attachment 066"></div>
+    <div class="attachment-page"><div class="attachment-header">067 - 2026-02-04, 1749.jpg</div><img class="attachment-img" src="images/067 - 2026-02-04, 1749.jpg" alt="Attachment 067"></div>
+    <div class="attachment-page"><div class="attachment-header">068 - 2026-02-04, 1751.jpg</div><img class="attachment-img" src="images/068 - 2026-02-04, 1751.jpg" alt="Attachment 068"></div>
+    <div class="attachment-page"><div class="attachment-header">069 - 2026-02-04, 1751.jpg</div><img class="attachment-img" src="images/069 - 2026-02-04, 1751.jpg" alt="Attachment 069"></div>
+    <div class="attachment-page"><div class="attachment-header">070 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/070 - 2026-02-04, 1753.jpg" alt="Attachment 070"></div>
+    <div class="attachment-page"><div class="attachment-header">071 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/071 - 2026-02-04, 1753.jpg" alt="Attachment 071"></div>
+    <div class="attachment-page"><div class="attachment-header">072 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/072 - 2026-02-04, 1753.jpg" alt="Attachment 072"></div>
+    <div class="attachment-page"><div class="attachment-header">073 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/073 - 2026-02-04, 1753.jpg" alt="Attachment 073"></div>
+    <div class="attachment-page"><div class="attachment-header">074 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/074 - 2026-02-04, 1753.jpg" alt="Attachment 074"></div>
+    <div class="attachment-page"><div class="attachment-header">075 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/075 - 2026-02-04, 1753.jpg" alt="Attachment 075"></div>
+    <div class="attachment-page"><div class="attachment-header">076 - 2026-02-04, 1753.jpg</div><img class="attachment-img" src="images/076 - 2026-02-04, 1753.jpg" alt="Attachment 076"></div>
+    <div class="attachment-page"><div class="attachment-header">077 - 2026-02-04, 1754.jpg</div><img class="attachment-img" src="images/077 - 2026-02-04, 1754.jpg" alt="Attachment 077"></div>
+    <div class="attachment-page"><div class="attachment-header">078 - 2026-02-04, 1754.jpg</div><img class="attachment-img" src="images/078 - 2026-02-04, 1754.jpg" alt="Attachment 078"></div>
+</div>
+
+</body>
+</html>
